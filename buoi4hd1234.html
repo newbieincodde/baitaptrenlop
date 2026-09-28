@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Portfolio - Poppins & Glassmorphism</title>
+    
+    <!-- Font Google Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="buoi4hd1234.css">
+</head>
+<body>
+
+    <!-- Loading Spinner -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header glass-panel">
+        <div class="logo">My Portfolio</div>
+        <button class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="navigation" id="mainNav">
+            <a href="#about">Giới thiệu</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#services">Dịch vụ</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+
+    <!-- BỐ CỤC CHÍNH -->
+    <div class="layout">
+
+        <!-- SIDEBAR (Cột trái) -->
+        <aside class="sidebar profile-card">
+            <div class="card-inner">
+                <!-- Mặt trước thẻ -->
+                <div class="card-front glass-panel">
+                    <div class="profile">
+                        <div class="avatar floating-avatar">N</div>
+                        <h2>Ngọc Nhân</h2>
+                        <p>Sinh viên Công nghệ Thông tin</p>
+                    </div>
+                    <div class="sidebar-info">
+                        <h3>Thông tin</h3>
+                        <p>Email: example@gmail.com</p>
+                        <p>Địa điểm: Việt Nam</p>
+                        <p>Trạng thái: Đang học tập</p>
+                    </div>
+                </div>
+                <!-- Mặt sau thẻ (Khi hover) -->
+                <div class="card-back glass-panel">
+                    <h3>Kết nối với mình</h3>
+                    <div class="sidebar-info">
+                        <p>📍 Đồng Nai, Việt Nam</p>
+                        <p>📞 0123 456 789</p>
+                        <p>🐙 github.com/ngocnhan</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT (Cột phải) -->
+        <main class="main-content">
+
+            <!-- ABOUT -->
+            <section id="about" class="section glass-panel" data-aos="fade-up">
+                <p class="section-label">ABOUT ME</p>
+                <h1>Xin chào, mình là Ngọc Nhân</h1>
+                <!-- Hiệu ứng chữ gõ -->
+                <div class="typing-container">
+                    <span class="typing-text">Tôi là một Web Developer...</span>
+                </div>
+                <p>Mình là sinh viên Công nghệ Thông tin và đang học về lập trình, thiết kế website và phát triển phần mềm. Mục tiêu của mình là xây dựng những sản phẩm đơn giản, dễ sử dụng và có giao diện đẹp.</p>
+                <a href="#contact" class="button">Khám phá ngay</a>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="skills" class="section glass-panel" data-aos="fade-up">
+                <p class="section-label">MY SKILLS</p>
+                <h2>Kỹ năng của mình</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-info"><span>HTML/CSS</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-per" style="--target-width: 90%; animation-delay: 0.2s;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+                        <div class="skill-bar"><div class="skill-per" style="--target-width: 75%; animation-delay: 0.4s;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Python</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-per" style="--target-width: 80%; animation-delay: 0.6s;"></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES -->
+            <section id="services" class="section glass-panel" data-aos="fade-up">
+                <p class="section-label">SERVICES</p>
+                <h2>Dịch vụ</h2>
+                <div class="services-container">
+                    <article class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service-icon">&lt;/&gt;</div>
+                        <h3>Thiết kế Website</h3>
+                        <p>Tạo các trang web có cấu trúc rõ ràng, giao diện đẹp và dễ sử dụng.</p>
+                    </article>
+                    <article class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-icon">🎨</div>
+                        <h3>Thiết kế giao diện</h3>
+                        <p>Xây dựng bố cục và màu sắc phù hợp với nhu cầu của người sử dụng.</p>
+                    </article>
+                    <article class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-icon">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>Tối ưu website hiển thị tốt trên mọi thiết bị.</p>
+                    </article>
+                    <article class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Lập trình cơ bản</h3>
+                        <p>Xây dựng các chương trình nhỏ bằng Python.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section class="section glass-panel" data-aos="fade-up">
+                <p class="section-label">MY PROJECTS</p>
+                <h2>Dự án đã thực hiện</h2>
+                <div class="projects-container">
+                    <article class="project-card">
+                        <h3>Website Portfolio</h3>
+                        <p>Website giới thiệu bản thân xây dựng bằng HTML và CSS, tích hợp hiệu ứng hiện đại.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Website Dinh dưỡng</h3>
+                        <p>Nền tảng web cung cấp kiến thức về dinh dưỡng và xây dựng lối sống lành mạnh.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CONTACT (ĐÃ THÊM FORM ĐIỀN THÔNG TIN) -->
+            <section id="contact" class="section glass-panel contact-section" data-aos="fade-up">
+                <p class="section-label">CONTACT</p>
+                <h2>Liên hệ với mình</h2>
+                <p style="margin-bottom: 25px;">Hãy điền thông tin vào bảng dưới đây để gửi tin nhắn cho mình nhé.</p>
+                
+                <!-- Box điền thông tin (Form) -->
+                <form class="contact-form" action="#" method="POST">
+                    <div class="input-group">
+                        <input type="text" placeholder="Tên của bạn" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email của bạn" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="5" placeholder="Nội dung tin nhắn..." required></textarea>
+                    </div>
+                    <button type="submit" class="button">Gửi tin nhắn</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- BANNER HÌNH ẢNH (Khắc phục sương mù xanh) -->
+    <section class="parallax-banner" data-aos="fade-in">
+        <div class="parallax-content glass-panel">
+            <h2>Thiết kế sáng tạo - Trải nghiệm mượt mà</h2>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Ngọc Nhân. All rights reserved.</p>
+    </footer>
+
+    <!-- FAB BUTTON -->
+    <a href="#contact" class="fab-btn">💬</a>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Tắt loading
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').style.opacity = '0';
+                setTimeout(() => { document.getElementById('loadingOverlay').style.display = 'none'; }, 500);
+            }, 800);
+        });
+
+        // Khởi tạo AOS
+        AOS.init({ duration: 800, once: true, offset: 50 });
+
+        // Menu Mobile
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
