@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoạt động 1 - Bảng Mã Màu Thông Minh (Design System)</title>
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #06b6d4;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --text-light: #94a3b8;
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background-color: var(--bg-main); color: var(--text-dark); padding: 30px; line-height: 1.6; }
+    .portfolio-card { max-width: 800px; margin: 0 auto; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 30px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04); }
+    .header-section { border-bottom: 2px solid var(--border-color); padding-bottom: 20px; margin-bottom: 20px; }
+    h1 { color: var(--primary-color); font-size: 28px; margin-bottom: 8px; }
+    .subtitle { color: var(--secondary-color); font-weight: 600; font-size: 16px; }
+    p.bio { color: var(--text-muted); margin: 15px 0 20px; }
+    .meta-info { color: var(--text-light); font-size: 13px; }
+    .btn-action { display: inline-block; margin-top: 15px; padding: 10px 22px; background-color: var(--primary-color); color: var(--bg-card); text-decoration: none; border-radius: 6px; font-weight: bold; transition: opacity 0.2s; }
+    .btn-action:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="portfolio-card">
+    <div class="header-section">
+      <h1>Ngọc Nhân - Portfolio</h1>
+      <div class="subtitle">Sinh Viên Công Nghệ Thông Tin (LHU)</div>
+    </div>
+    <p class="bio">
+      Trang Portfolio này được quản lý màu sắc hoàn toàn thông qua CSS Variables tại <code>:root</code>. 
+      Khi giảng viên đổi mã màu tại <code>:root</code>, toàn bộ màu chủ đạo, tiêu đề và nền sẽ tự động đồng bộ ngay lập tức.
+    </p>
+    <div class="meta-info">MSSV: 125002885 • Học phần: Thiết kế Web 111101 • Tuần 4: Design System</div>
+    <a href="#" class="btn-action">Khám Phá Kỹ Năng</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoạt động 4 - Refactoring Performance</title>
+  <style>
+    .box {
+      width: 100px; height: 100px; background: red;
+      /* Tránh dùng top, left để diễn hoạt, nên dùng transform */
+      transition: transform 0.5s ease;
+    }
+    .box:hover {
+      transform: translateX(100px);
+    }
+  </style>
+</head>
+<body>
+  <p>Hover vào hộp để di chuyển. Việc sử dụng transform thay vì left sẽ giúp tối ưu hiệu năng render.</p>
+  <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoạt động 1 - Micro-interactions</title>
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0fdf4; margin: 0; }
+    .btn-send {
+      padding: 12px 24px; font-size: 1rem; border: none; border-radius: 6px;
+      background: #2563eb; color: white; cursor: pointer;
+      /* Animation / Transition properties */
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s, background 0.2s;
+    }
+    .btn-send:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      background: #1d4ed8;
+    }
+    .btn-send:active {
+      transform: scale(0.95);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-send">Gửi tin nhắn</button>
+</body>
+</html>

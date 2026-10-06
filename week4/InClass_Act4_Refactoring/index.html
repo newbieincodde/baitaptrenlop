@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoạt động 4 - Design System Refactoring</title>
+  <style>
+    :root {
+      --primary: #ef4444;
+      --padding-box: 25px;
+      --bg-box: #fee2e2;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .box {
+      background-color: var(--bg-box);
+      color: var(--primary);
+      padding: var(--padding-box);
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      margin-bottom: var(--padding-box);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Hộp 1 - Sử dụng biến CSS để quản lý mã màu và khoảng cách</div>
+  <div class="box">Hộp 2 - Khi thay biến tại :root thì hộp này cũng đổi theo</div>
+</body>
+</html>

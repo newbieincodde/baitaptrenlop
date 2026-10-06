@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 1 - Responsive Typography Scale</title>
+  <style>
+    :root {
+      --fs-h1: 2.5rem;
+      --fs-h2: 2rem;
+      --fs-p: 1rem;
+    }
+    @media (max-width: 600px) {
+      :root {
+        --fs-h1: 1.8rem;
+        --fs-h2: 1.5rem;
+        --fs-p: 0.95rem;
+      }
+    }
+    body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.5; }
+    h1 { font-size: var(--fs-h1); margin-bottom: 0.5em; }
+    h2 { font-size: var(--fs-h2); margin-bottom: 0.5em; }
+    p { font-size: var(--fs-p); }
+  </style>
+</head>
+<body>
+  <h1>Tiêu đề chính lớn</h1>
+  <h2>Tiêu đề phụ</h2>
+  <p>Đoạn văn bản này sẽ tự động giảm kích thước khi xem trên thiết bị di động nhờ vào việc thay đổi giá trị biến CSS trong Media Queries.</p>
+</body>
+</html>

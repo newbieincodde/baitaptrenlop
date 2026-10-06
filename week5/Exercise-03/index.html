@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 3 - Typing Effect</title>
+  <style>
+    body { font-family: monospace; display: flex; justify-content: center; padding-top: 100px; background: #111; color: #0f0; }
+    .typing-text {
+      overflow: hidden; white-space: nowrap; border-right: 3px solid #0f0;
+      margin: 0 auto; letter-spacing: 0.15em; font-size: 24px;
+      animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    }
+    @keyframes typing { from { width: 0 } to { width: 100% } }
+    @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #0f0; } }
+  </style>
+</head>
+<body>
+  <div class="typing-text">Tôi là một Web Developer...</div>
+</body>
+</html>

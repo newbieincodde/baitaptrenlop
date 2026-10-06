@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Ngọc Nhân | Premium Portfolio</title>
+    
+    <!-- Modern Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- ÁNH SÁNG MÔI TRƯỜNG -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- THANH ĐIỀU HƯỚNG NỔI -->
+    <nav class="floating-nav">
+        <div class="logo">Phạm Ngọc Nhân</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bento">Khám phá</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+        <div class="nav-actions" style="display:flex; align-items:center; gap: 10px;">
+            <button id="themeToggle" class="btn-icon" aria-label="Đổi giao diện">🌙</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Mở Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <!-- HERO SECTION -->
+        <section id="home" class="hero" data-aos="fade-up" data-aos-duration="1200">
+            <div class="hero-badge">🚀 Web Developer & Designer</div>
+            <h1 class="hero-title">Kiến tạo trải nghiệm,<br><span class="text-gradient">Định hình tương lai.</span></h1>
+            <div class="typing-wrapper">
+                <span id="dynamic-typing" class="typing-text"></span><span class="cursor">|</span>
+            </div>
+        </section>
+
+        <!-- BENTO GRID (Bổ sung nội dung để không bị trống) -->
+        <section id="bento" class="bento-grid">
+            
+            <!-- Box 1: About Me -->
+            <div class="bento-box bento-about" data-aos="zoom-in" data-aos-delay="100">
+                <div class="box-content">
+                    <h2>Về Tôi</h2>
+                    <p>Tôi là một sinh viên đam mê sáng tạo các trải nghiệm kỹ thuật số xuất sắc. Kết hợp giữa tư duy logic của lập trình và con mắt thẩm mỹ của thiết kế.</p>
+                </div>
+                <img src="3d_coding.jpg" class="about-img" alt="3D Professional Workspace">
+            </div>
+
+            <!-- Box 2: Profile Lật thẻ 3D -->
+            <div class="bento-box bento-flip-container" data-aos="zoom-in" data-aos-delay="200">
+                <div class="bento-flip-inner">
+                    <div class="bento-front">
+                        <div class="avatar-wrapper">
+                            <div class="avatar">N</div>
+                            <div class="avatar-ring"></div>
+                        </div>
+                        <h3>Hồ Sơ</h3>
+                        <p class="click-hint">Hover để lật &rarr;</p>
+                    </div>
+                    <div class="bento-back">
+                        <h3>Liên hệ</h3>
+                        <div class="contact-list">
+                            <p>📍 Đồng Nai, VN</p>
+                            <p>📞 0123.456.789</p>
+                            <p>📧 nhan@dev.com</p>
+                        </div>
+                        <a href="#contact" class="btn-small">Nhắn tin ngay</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 3: Kỹ năng (Interactive Click/Hover % Reveal) -->
+            <div class="bento-box bento-skills" data-aos="zoom-in" data-aos-delay="300">
+                <h2>Kỹ Năng Cốt Lõi</h2>
+                <p style="font-size: 0.8rem; color: var(--gradient-1); margin-bottom: 10px;">(Ấn / Hover để xem %)</p>
+                <div class="skills-list">
+                    <div class="skill-track" tabindex="0">
+                        <div class="skill-fill" style="--target: 95%; --color: #3b82f6;">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                    </div>
+                    <div class="skill-track" tabindex="0">
+                        <div class="skill-fill" style="--target: 80%; --color: #eab308;">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                    <div class="skill-track" tabindex="0">
+                        <div class="skill-fill" style="--target: 85%; --color: #10b981;">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 4: Services (Lấp đầy khoảng trống) -->
+            <div class="bento-box bento-services" data-aos="zoom-in" data-aos-delay="400">
+                <h2>Dịch Vụ Của Tôi</h2>
+                <div class="service-grid-mini">
+                    <div class="s-card"><span class="s-icon">💻</span><p>Thiết kế Web</p></div>
+                    <div class="s-card"><span class="s-icon">🎨</span><p>UI/UX Design</p></div>
+                    <div class="s-card"><span class="s-icon">📱</span><p>Responsive</p></div>
+                    <div class="s-card"><span class="s-icon">⚡</span><p>Tối ưu hiệu năng</p></div>
+                </div>
+            </div>
+
+            <!-- Box 5: Tích hợp Đề mục Tuần 3-5 (Góc nhìn Giáo viên) -->
+            <div class="bento-box bento-projects" data-aos="zoom-in" data-aos-delay="500">
+                <h2>Showcase Kiến Thức (Tuần 3 - 5)</h2>
+                <p style="margin-bottom: 20px; color: var(--gradient-1); font-weight: 600; font-size: 0.9rem;">Minh chứng năng lực ứng dụng toàn diện giáo trình Thiết kế Web.</p>
+                <div class="project-cards">
+                    <div class="p-card">
+                        <h4>📦 Tuần 3: CSS Layout</h4>
+                        <p>Ứng dụng Flexbox & Grid xây dựng cấu trúc không gian.</p>
+                        <div class="card-tags">
+                            <a href="week3/Ex01_HolyGrail/index.html" class="tag" style="text-decoration:none;">Holy Grail</a>
+                            <a href="week3/Ex02_PricingTable/index.html" class="tag" style="text-decoration:none;">Pricing</a>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <h4>📱 Tuần 4: Design System</h4>
+                        <p>Kiến trúc Mobile-First, quản lý Theme toàn cục bằng biến CSS.</p>
+                        <div class="card-tags">
+                            <a href="week4/Exercise-04/index.html" class="tag" style="text-decoration:none;">Theme</a>
+                            <a href="week4/InClass_Act2_ResponsivePortfolio/index.html" class="tag" style="text-decoration:none;">Responsive</a>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <h4>✨ Tuần 5: UI Animation</h4>
+                        <p>Đột phá trải nghiệm với Parallax, lật thẻ 3D, Micro-interactions.</p>
+                        <div class="card-tags">
+                            <a href="week5/Exercise-02/index.html" class="tag" style="text-decoration:none;">Card Flip</a>
+                            <a href="week5/Exercise-06/index.html" class="tag" style="text-decoration:none;">Skill Bar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- FORM LIÊN HỆ -->
+        <section id="contact" class="modern-contact" data-aos="fade-up" data-aos-offset="100">
+            <div class="contact-card bento-box">
+                <h2>Bắt đầu dự án mới?</h2>
+                <p>Hãy để lại thông tin, chúng ta sẽ tạo ra sự khác biệt.</p>
+                <form class="contact-form">
+                    <div class="input-row">
+                        <input type="text" placeholder="Tên của bạn" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <textarea rows="3" placeholder="Chia sẻ ý tưởng của bạn..."></textarea>
+                    <button class="btn-glow">Gửi Tin Nhắn Lên Vũ Trụ 🚀</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PARALLAX BANNER (Yêu cầu Bài tập) -->
+        <section class="parallax-banner bento-box" data-aos="fade-up" style="padding:0; margin-bottom: 80px; overflow: hidden; border: none;">
+            <div class="parallax-bg">
+                <div class="parallax-content">
+                    <h2>Trải nghiệm mượt mà - Tốc độ đỉnh cao</h2>
+                </div>
+            </div>
+        </section>
+
+        
+    <!-- NÚT CHAT FAB (Yêu cầu Bài tập) -->
+    <a href="#contact" class="fab-btn" aria-label="Mở cửa sổ Chat">💬</a>
+
+    <!-- FOOTER -->
+    <footer style="text-align: center; padding: 30px; color: var(--text-muted); font-size: 0.9rem;">
+        &copy; 2026 Phạm Ngọc Nhân.
+    </footer>
+
+    <!-- Script Animation & Tương tác -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS Init
+        AOS.init({ duration: 800, once: true, offset: 50, easing: 'ease-out-cubic' });
+        
+        // Typing Effect
+        const textToType = "Sáng tạo giao diện tinh tế & đột phá hiệu năng.";
+        let charIndex = 0;
+        function typeWriter() {
+            if (charIndex < textToType.length) {
+                document.getElementById('dynamic-typing').innerHTML += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 60);
+            }
+        }
+        setTimeout(typeWriter, 1000);
+
+        // Theme Toggle
+        const themeBtn = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        if(localStorage.getItem('bento-theme') === 'light') {
+            body.classList.replace('dark-theme', 'light-theme');
+            themeBtn.textContent = '🌞';
+        }
+        
+        themeBtn.addEventListener('click', () => {
+            if (body.classList.contains('dark-theme')) {
+                body.classList.replace('dark-theme', 'light-theme');
+                themeBtn.textContent = '🌞';
+                localStorage.setItem('bento-theme', 'light');
+            } else {
+                body.classList.replace('light-theme', 'dark-theme');
+                themeBtn.textContent = '🌙';
+                localStorage.setItem('bento-theme', 'dark');
+            }
+        });
+
+        // Hamburger Menu Mobile
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

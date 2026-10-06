@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 3 - Smart Navigation Bar</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; background: #1e293b; color: white; padding: 15px 20px; }
+    .nav-links { display: flex; gap: 20px; list-style: none; }
+    .nav-links a { color: white; text-decoration: none; }
+    .hamburger { display: none; background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+    
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">LogoBrand</div>
+    <button class="hamburger">☰</button>
+    <ul class="nav-links">
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Dịch vụ</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </header>
+</body>
+</html>

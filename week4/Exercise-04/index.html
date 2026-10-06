@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 4 - Dark/Light Mode Theme System</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --primary: #2563eb;
+    }
+    .dark-theme {
+      --bg-color: #1a1a1a;
+      --text-color: #e0e0e0;
+      --primary: #60a5fa;
+    }
+    body { background-color: var(--bg-color); color: var(--text-color); font-family: Arial, sans-serif; padding: 20px; transition: 0.3s; }
+    .box { border: 2px solid var(--primary); padding: 20px; border-radius: 8px; }
+    button { padding: 10px; background: var(--primary); color: white; border: none; cursor: pointer; border-radius: 4px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <button onclick="document.body.classList.toggle('dark-theme')">Chuyển đổi giao diện</button>
+  <div class="box">
+    <h3>Nội dung thích ứng</h3>
+    <p>Nhấn nút bên trên để thêm/xoá class .dark-theme vào body, giao diện sẽ tự đổi màu mượt mà.</p>
+  </div>
+</body>
+</html>

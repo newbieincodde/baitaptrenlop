@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 6 - Skill Bar Animation</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 40px; max-width: 600px; margin: 0 auto; }
+    .skill-track { width: 100%; background: #e2e8f0; height: 20px; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+    .skill-fill { height: 100%; width: 0; animation: fillBar 2s forwards cubic-bezier(0.1, 0.7, 1.0, 0.1); }
+    
+    .html { --target: 90%; background: #ef4444; }
+    .css { --target: 85%; background: #3b82f6; }
+    
+    @keyframes fillBar { to { width: var(--target); } }
+  </style>
+</head>
+<body>
+  <h3>HTML (90%)</h3>
+  <div class="skill-track"><div class="skill-fill html"></div></div>
+  <h3>CSS (85%)</h3>
+  <div class="skill-track"><div class="skill-fill css"></div></div>
+</body>
+</html>
