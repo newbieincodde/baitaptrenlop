@@ -1,0 +1,3 @@
+# Nhật ký Prompt - Hoạt động 2: Xây dựng hệ thống lưới Portfolio
+1. Prompt Layout tổng: "Dựa trên cấu trúc HTML5 đã có, hãy viết CSS Grid để dàn trang: Header chiếm toàn bộ chiều ngang, bên dưới là Sidebar rộng 250px và Main content chiếm phần còn lại, cuối cùng là Footer. Sử dụng thuộc tính grid-template-areas để quản lý."
+2. Prompt Skills: "Hãy viết CSS cho danh mục 'Skills'. Sử dụng Flexbox để các item hiển thị dạng hàng ngang, tự động xuống dòng (flex-wrap), khoảng cách giữa các item là 15px và căn giữa các item."

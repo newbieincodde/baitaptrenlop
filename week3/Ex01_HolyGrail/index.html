@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 1 - Holy Grail Layout (CSS Grid)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 220px 1fr 200px;
+      grid-template-areas:
+        "header  header  header"
+        "nav     main    aside"
+        "footer  footer  footer";
+    }
+    header {
+      grid-area: header;
+      background-color: #1e293b;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      grid-area: nav;
+      background-color: #f1f5f9;
+      padding: 20px;
+      border-right: 1px solid #cbd5e1;
+    }
+    nav ul {
+      list-style: none;
+    }
+    nav li {
+      margin-bottom: 12px;
+    }
+    nav a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    main {
+      grid-area: main;
+      background-color: #ffffff;
+      padding: 30px;
+      line-height: 1.7;
+    }
+    aside {
+      grid-area: aside;
+      background-color: #f8fafc;
+      padding: 20px;
+      border-left: 1px solid #cbd5e1;
+    }
+    footer {
+      grid-area: footer;
+      background-color: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Website Tin Tức Công Nghệ (Holy Grail Layout)</h1>
+  </header>
+
+  <nav>
+    <h3>Menu Điều Hướng</h3>
+    <ul>
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Tin mới nhất</a></li>
+      <li><a href="#">Lập trình Web</a></li>
+      <li><a href="#">Trí tuệ nhân tạo</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Bài Viết Tiêu Điểm: CSS Grid Master 2026</h2>
+    <p>Holy Grail Layout là mô hình kinh điển giải quyết việc phân chia bố cục đa cột mà trước đây lập trình viên phải vất vả sử dụng float.</p>
+    <br>
+    <p>Nhờ thuộc tính <code>grid-template-areas</code>, việc cấu trúc Header, Navigation, Main, Sidebar quảng cáo và Footer trở nên trực quan và cực kỳ ổn định khi nội dung ở cột chính thay đổi kích thước.</p>
+  </main>
+
+  <aside>
+    <h3>Góc Quảng Cáo</h3>
+    <p style="margin-top: 10px; font-size: 14px; color: #64748b;">Khóa học Lập trình Web Fullstack chuẩn đầu ra LHU 2026.</p>
+  </aside>
+
+  <footer>
+    <p>© 2026 Bản quyền thuộc về Dự án Học Web LHU</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoạt động 2 - Bố Cục Portfolio Lưới (Grid & Flexbox)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 250px 1fr; /* Sidebar 250px, Main chiếm phần còn lại */
+      grid-template-areas:
+        "header  header"
+        "sidebar main"
+        "footer  footer";
+      gap: 15px; /* Quản lý khoảng cách bằng gap */
+      background-color: #f1f5f9;
+      padding: 15px;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #1e293b;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    aside.sidebar {
+      grid-area: sidebar;
+      background-color: #ffffff;
+      padding: 25px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .avatar {
+      width: 90px;
+      height: 90px;
+      background: #2563eb;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      margin: 0 auto 15px;
+    }
+
+    main {
+      grid-area: main;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    main h2 {
+      margin-bottom: 15px;
+      color: #0f172a;
+    }
+
+    /* Vùng Skills dàn bằng Flexbox tự động xuống dòng và khoảng cách 15px */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap; /* Tự động xuống dòng khi thiếu không gian */
+      gap: 15px;       /* Khoảng cách 15px theo đúng yêu cầu prompt */
+      margin-top: 15px;
+    }
+    .skill-badge {
+      background-color: #eff6ff;
+      color: #2563eb;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: 600;
+      border: 1px solid #bfdbfe;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hồ Sơ Năng Lực Cá Nhân (Portfolio Grid)</h1>
+  </header>
+
+  <aside class="sidebar">
+    <div class="avatar">NN</div>
+    <h3>Ngọc Nhân</h3>
+    <p style="color: #64748b; font-size: 14px; margin-top: 5px;">MSSV: 125002885</p>
+  </aside>
+
+  <main>
+    <h2>Giới Thiệu</h2>
+    <p style="line-height: 1.6; color: #475569; margin-bottom: 25px;">
+      Đây là bài thực hành số 2 của Tuần 3, ứng dụng CSS Grid để phân chia bố cục tổng thể và Flexbox để co giãn các thẻ kỹ năng linh hoạt.
+    </p>
+
+    <h2>Kỹ Năng Lập Trình (Flexbox Wrap)</h2>
+    <div class="skills-container">
+      <div class="skill-badge">HTML5 Semantic</div>
+      <div class="skill-badge">CSS Grid Layout</div>
+      <div class="skill-badge">Flexbox System</div>
+      <div class="skill-badge">Git & GitHub</div>
+      <div class="skill-badge">Responsive Design</div>
+      <div class="skill-badge">Vibe Coding AI</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Bản quyền thuộc về sinh viên Đại học Lạc Hồng</p>
+  </footer>
+
+</body>
+</html>

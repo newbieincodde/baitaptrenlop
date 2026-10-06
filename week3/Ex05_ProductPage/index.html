@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 5 - Trang Chi Tiết Sản Phẩm</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f8fafc;
+    }
+    .product-container {
+      display: grid;
+      grid-template-columns: 6fr 4fr;
+      gap: 35px;
+      max-width: 950px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .product-gallery img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product-info h1 {
+      font-size: 26px;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+    .price {
+      font-size: 22px;
+      color: #ef4444;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .group-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 15px 0 8px;
+      color: #4b5563;
+    }
+    .options-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .size-badge {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .size-badge.active, .size-badge:hover {
+      border-color: #2563eb;
+      color: #2563eb;
+    }
+    .color-dot {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .color-dot:hover {
+      box-shadow: 0 0 0 2px #3b82f6;
+    }
+    .color-black { background-color: #18181b; }
+    .color-blue { background-color: #2563eb; }
+    .color-red { background-color: #dc2626; }
+
+    .quantity-counter {
+      display: flex;
+      align-items: center;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      width: fit-content;
+    }
+    .quantity-counter button {
+      width: 36px;
+      height: 36px;
+      background: #f1f5f9;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .quantity-counter span {
+      padding: 0 15px;
+      font-weight: bold;
+    }
+    .btn-buy {
+      margin-top: 25px;
+      width: 100%;
+      padding: 14px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-container">
+    <div class="product-gallery">
+      <img src="https://picsum.photos/600/500?random=11" alt="Ảnh sản phẩm">
+    </div>
+
+    <div class="product-info">
+      <h1>Áo Khoác Nam Phong Cách Minimalist</h1>
+      <p class="price">520.000 VNĐ</p>
+
+      <div class="group-title">Chọn kích cỡ:</div>
+      <div class="options-row">
+        <div class="size-badge">S</div>
+        <div class="size-badge active">M</div>
+        <div class="size-badge">L</div>
+        <div class="size-badge">XL</div>
+      </div>
+
+      <div class="group-title">Chọn màu sắc:</div>
+      <div class="options-row">
+        <div class="color-dot color-black"></div>
+        <div class="color-dot color-blue"></div>
+        <div class="color-dot color-red"></div>
+      </div>
+
+      <div class="group-title">Số lượng:</div>
+      <div class="quantity-counter">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+
+      <button class="btn-buy">Thêm Vào Giỏ Hàng</button>
+    </div>
+  </div>
+
+</body>
+</html>
